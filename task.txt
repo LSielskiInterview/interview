@@ -1,0 +1,41 @@
+Task description
+ 
+Your task is to prepare driver for coffee machine. Driver module should provide implementation for following interface:
+ 
+public interface UserInputHandler {
+  void buttonPushed(int n);
+  void moneyInserted(double amount);
+  void abort();
+}
+ 
+Implementation class can take as constructor parameters following dependencies:
+ 
+public interface CoffeeController {
+  int makeBlack();
+  int makeWhite();
+}
+ 
+public interface ScreenController {
+  int displayMessage(String message);
+}
+ 
+public interface CashBackController {
+  int releaseMoney(double amount);
+}
+ 
+Specification:
+ 
+Coffee machine should allow user to make coffee of two types:
+ 
+black coffee for $0.99 (button no: 0)
+white coffee for $1.99 (button no: 1)
+ 
+User can insert money that rise available credit.
+ 
+User should see available credit on machine screen.
+ 
+When user pick coffee type using buttons, coffee should be made, available credit should be decreased by coffee price and all remaining credit should be released back as money to the user.
+ 
+When user aborts process all available credit should be released back as money.
+ 
+This is just MVP of our coffee machine driver, but it will receive long time maintenance and would be extended with new functionalities in the future.
