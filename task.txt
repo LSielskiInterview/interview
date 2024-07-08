@@ -31,11 +31,6 @@ black coffee for $0.99 (button no: 0)
 white coffee for $1.99 (button no: 1)
  
 User can insert money that rise available credit.
- 
 User should see available credit on machine screen.
- 
 When user pick coffee type using buttons, coffee should be made, available credit should be decreased by coffee price and all remaining credit should be released back as money to the user.
- 
 When user aborts process all available credit should be released back as money.
- 
-This is just MVP of our coffee machine driver, but it will receive long time maintenance and would be extended with new functionalities in the future.
